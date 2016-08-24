@@ -1,0 +1,52 @@
+.source.less, .source.css, .source.scss {
+	& .key-value,
+	& .property-list,
+	& .terminator,
+	& .meta.brace.round,
+	& .separator.list,
+	.variable.other {
+		color: @white !important;
+	}
+
+	.support.type.property-name {
+		color: @blue !important;
+	}
+
+	.keyword,
+	.punctuation.definition.entity,
+	.rgb-value,
+	.control.logical.operator {
+		color: @orange;
+	}
+
+	.support.constant.property-value,
+	.property-value,
+	.pseudo-class,
+	.pseudo-class > .punctuation.definition.entity,
+	.pseudo-element,
+	.pseudo-element > .punctuation.definition.entity,
+	.any-method.builtin {
+		color: @green;
+	}
+
+	.entity.other.attribute-name.class,
+	.entity.other.attribute-name.class > .punctuation.definition.entity,
+	.operator:not(.logical) {
+		color: @pink !important;
+	}
+
+	.w3c-standard-color-name,
+	.constant.numeric,
+	.entity.other.attribute-name.id,
+	.id > .punctuation.definition.entity {
+		color: @purple;
+	}
+
+	.comment {
+		color: @comment-color;
+	}
+
+	.string {
+		color: @yellow;
+	}
+}
