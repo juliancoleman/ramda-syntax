@@ -1,6 +1,6 @@
 const R = require('ramda');
-const myVarArrowFn = (these, those) => these - those;
 
+const myVarArrowFn = (these, those) => these - those;
 const diff = (a, b) => a - b;
 
 function sortAscending() {
