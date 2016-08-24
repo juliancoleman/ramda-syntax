@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "rules": {
+    "func-names": 0,
+    "global-require": 0,
+    "no-console": 0,
+    "quote-props": ["error", "consistent"]
+  },
+  "globals": {
+    "appRequire": true
+  }
+}
