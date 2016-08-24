@@ -1,5 +1,17 @@
 # ramda-syntax theme
 
-A short description of your theme.
+![Ramda](http://i.imgur.com/EWXcK6p.png)
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+> The font used in the screenshot is SF Mono
+
+This is an Atom syntax theme based on the [Ramda REPL](http://ramdajs.com/repl/)
+
+### Install
+
+to install this package, simply run
+
+```bash
+apm install ramda-syntax
+```
+
+ or search `ramda` in Settings -> Install, and click the `themes` button next to the search box.
