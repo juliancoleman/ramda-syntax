@@ -1,38 +1,18 @@
 const R = require('ramda');
 
-const myVarArrowFn = (these, those) => these - those;
-const diff = (a, b) => a - b;
+const truncate = R.when(
+  R.propSatisfies(R.gt(R.__, 10), 'length'),
+  R.pipe(R.take(10), R.append('...'), R.join(''))
+);
 
-function sortAscending() {
-  return diff;
-}
+truncate('12345');         // => '12345'
+truncate('0123456789ABC'); // => '0123456789...'
 
-R.sort(sortAscending, [45, 21, 8, 2, 86, 1, 5]);
+const mapKeys = R.curry((fn, obj) => {
+  return R.fromPairs(R.map(R.adjust(fn, 0), R.toPairs(obj)));
+});
 
-function myFunction(param1, param2) {
-  const str = 'string';
-  const num = 1234567890;
-  const bool = true || false;
-  const newSymbol = Symbol();
-  const obj = new Object();
-  const arr = [];
+const myObj = mapKeys(R.toLower, { A: 1, B: 2, C: 3 });
+// => { a: 1, b: 2, c: 3 }
 
-  console.log(str, num, bool, newSymbol, obj, arr, param1, param2);
-  return num > 0;
-}
-
-myFunction();
-
-const num = 1234567890;
-let myLet = num + 1;
-myLet++;
-const myConstArrowFn = something => something;
-
-const somethingCool = myConstArrowFn;
-const somethingElse = myVarArrowFn();
-
-myVarArrowFn();
-
-console.log(myLet, somethingCool, somethingElse);
-
-R.sort(myVarArrowFn, [5, 4, 3, 2, 1]);
+R.fromPairs(myObj); // => [['a', 1], ['b', 2], ['c', 3]]
