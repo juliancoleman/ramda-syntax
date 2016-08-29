@@ -1,7 +1,9 @@
 @import "syntax-variables";
-@import "stylesheets-styles";
-@import "html-styles";
-@import "latex-override";
+
+// language-specific styles
+@import "patches/html";
+@import "patches/latex";
+@import "patches/stylesheets";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
