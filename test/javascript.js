@@ -8,9 +8,7 @@ const truncate = R.when(
 truncate('12345');         // => '12345'
 truncate('0123456789ABC'); // => '0123456789...'
 
-const mapKeys = R.curry((fn, obj) => {
-  return R.fromPairs(R.map(R.adjust(fn, 0), R.toPairs(obj)));
-});
+const mapKeys = R.curry((fn, obj) => R.fromPairs(R.map(R.adjust(fn, 0), R.toPairs(obj))));
 
 const myObj = mapKeys(R.toLower, { A: 1, B: 2, C: 3 });
 // => { a: 1, b: 2, c: 3 }

@@ -1,6 +1,7 @@
 @import "syntax-variables";
 @import "stylesheets-styles";
-@import "html-styles.less";
+@import "html-styles";
+@import "latex-override";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -124,7 +125,7 @@ atom-text-editor .search-results .marker.current-result .region,
   color: @white;
 
   &.interpolation {
-    color: darken(@red, 10%);
+    color: darken(@orange, 10%);
   }
 
   &.parameter.function {
@@ -352,4 +353,8 @@ atom-text-editor .search-results .marker.current-result .region,
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
+}
+
+.git-branch {
+  color: @purple;
 }
