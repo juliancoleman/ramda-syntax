@@ -4,6 +4,7 @@
 @import "patches/html";
 @import "patches/latex";
 @import "patches/stylesheets";
+@import "patches/python";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -199,6 +200,9 @@ atom-text-editor .search-results .marker.current-result .region,
 			color: @white;
 		}
   }
+  &.section.class.begin {
+    color: @white;
+  }
 
   &.section.embedded {
     color: darken(@red, 10%);
@@ -234,13 +238,14 @@ atom-text-editor .search-results .marker.current-result .region,
 		&.console {
 			color: @green;
 		}
+
+    &.class {
+      color: @green;
+    }
   }
 
   &.other.inherited-class {
     color: @green;
-  }
-  &.name.class, &.name.type.class {
-    color: @pink;
   }
 
   &.name.section {
