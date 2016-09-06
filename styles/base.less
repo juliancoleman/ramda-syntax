@@ -232,6 +232,10 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @blue;
     }
   }
+
+  &.variable {
+    color: @green;
+  }
 }
 
 .entity {
@@ -288,9 +292,18 @@ atom-text-editor .search-results .marker.current-result .region,
 				color: @blue;
 			}
 		}
+
     .entity {
       &.name.function {
         color: @blue;
+      }
+    }
+
+    .arguments {
+      .function-call {
+        .support.function {
+          color: @green;
+        }
       }
     }
 	}
