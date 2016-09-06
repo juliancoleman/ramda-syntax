@@ -160,6 +160,12 @@ atom-text-editor .search-results .marker.current-result .region,
     }
   }
 
+  // Just expect JSON curlies and arrays to spread their
+  // content across multiple lines.
+  &.unquoted {
+    color: @white;
+  }
+
   &.other.link {
     color: @red;
   }
