@@ -1,13 +1,13 @@
 {
-    "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
-        "outFile": "./test/typescript.js",
-        "sourceMap": true
-    },
-    "files": [
-        "test/typescript.ts"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "./test/typescript.js",
+    "sourceMap": true
+  },
+  "files": [
+    "test/typescript.ts"
+  ]
 }
