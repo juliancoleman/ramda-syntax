@@ -28,7 +28,7 @@ atom-text-editor, :host {
 
     .line-number {
       &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
+        background-color: rgba(185, 200, 255, 0.145);
         color: @syntax-gutter-text-color-selected;
       }
 
@@ -142,6 +142,13 @@ atom-text-editor .search-results .marker.current-result .region,
 	&.language {
 		color: @pink;
 	}
+  &.other.object {
+    color: @green;
+
+    &.property {
+      color: @blue;
+    }
+  }
 }
 
 .invalid.illegal {
@@ -235,6 +242,18 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.variable {
     color: @green;
+
+    &.property {
+      color: @blue;
+    }
+
+    &.dom {
+      color: @white;
+
+      &.property {
+        color: @blue;
+      }
+    }
   }
 }
 
@@ -251,6 +270,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.class {
       color: @green;
+    }
+
+    &.name.tag {
+      color: @orange;
     }
   }
 
@@ -277,6 +300,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .meta {
 	color: @white;
+
+  .id {
+    color: @yellow;
+  }
 
 	&.function-call {
 		.entity {
