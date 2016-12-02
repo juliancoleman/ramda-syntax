@@ -223,6 +223,16 @@ atom-text-editor .search-results .marker.current-result .region,
 
 }
 
+.syntax--template {
+  & > .syntax--source.syntax--embedded {
+    & > .syntax--meta.syntax--method-call {
+      & > .syntax--support.syntax--function {
+        color: @blue;
+      }
+    }
+  }
+}
+
 .support {
   &.class {
     color: @green;
