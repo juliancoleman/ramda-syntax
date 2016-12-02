@@ -14,7 +14,3 @@ const myObj = mapKeys(R.toLower, { A: 1, B: 2, C: 3 });
 // => { a: 1, b: 2, c: 3 }
 
 R.fromPairs(myObj); // => [['a', 1], ['b', 2], ['c', 3]]
-
-class Interpreter {
-
-}
