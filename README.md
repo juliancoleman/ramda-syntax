@@ -26,6 +26,8 @@ Feel free to open up an issue, or submit a pull request if you'd like to see a l
 >
 > JSON
 >
+> LaTeX
+>
 > LESS
 >
 > Lua
@@ -40,7 +42,6 @@ Feel free to open up an issue, or submit a pull request if you'd like to see a l
 >
 > Stylus
 >
-> LaTeX
 >
 > TypeScript (syntax provided by [atom-typescript](https://atom.io/packages/atom-typescript))
 
