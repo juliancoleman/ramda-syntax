@@ -10,7 +10,7 @@
   "repository": "https://github.com/juliancoleman/ramda-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <=1.12"
+    "atom": ">=1.13.0 <=2.0.0"
   },
   "devDependencies": {
     "eslint": "^3.3.1",
