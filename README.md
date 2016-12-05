@@ -30,6 +30,8 @@ Feel free to open up an issue, or submit a pull request if you'd like to see a l
 >
 > Lua
 >
+> Markdown
+>
 > Python
 >
 > Ruby
