@@ -1,0 +1,20 @@
+@import '../variables';
+
+.gutter {
+  background-color: @background-color;
+  color: @white;
+
+  .line-number {
+    color: @dark-green;
+    font-weight: 600;
+
+    &.cursor-line {
+      background-color: rgba(185, 200, 255, 0.145);
+      color: @dark-green;
+    }
+
+    &.cursor-line-no-selection {
+      color: @dark-green;
+    }
+  }
+}
