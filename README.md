@@ -3,7 +3,7 @@
 A syntax theme based on the [RamdaJS REPL](https://ramdajs.com/repl/)
 
 RamdaJS REPL                       | Atom Ramda Syntax Theme
-:----------------------------------:-----------------------------------:
+:---------------------------------:|:-----------------------------------:
 ![](http://i.imgur.com/KwHgbVy.png)| ![](http://i.imgur.com/oEgYTNa.png)
 > The font used in the screenshot is SF Mono (not included)
 
