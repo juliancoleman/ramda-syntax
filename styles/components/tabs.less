@@ -1,0 +1,35 @@
+@import '../variables';
+
+//
+// The purple behind the status bar
+//
+
+atom-workspace-axis.vertical {
+  background: @ramda;
+}
+
+//
+// The tabs themselves
+//
+
+ul[is = 'atom-tabs'] {
+  &.inset-panel {
+    border-radius: 0;
+
+    & > li[is = 'tabs-tab'] {
+      background: @ramda;
+      color: @ramda-bright;
+      font-weight: 300;
+
+      &:hover, &.active:hover {
+        color: #fff;
+        background: auto;
+      }
+
+      &.active, .active:only-child &:hover{
+        background: @ramda-deep !important;
+        color: #fff;
+      }
+    }
+  }
+}
