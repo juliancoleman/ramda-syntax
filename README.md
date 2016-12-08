@@ -1,10 +1,11 @@
 # ramda-syntax theme
 
-![Ramda](http://i.imgur.com/EWXcK6p.png)
+A syntax theme based on the [RamdaJS REPL](https://ramdajs.com/repl/)
 
+RamdaJS REPL                       | Atom Ramda Syntax Theme
+:----------------------------------:-----------------------------------:
+![](http://i.imgur.com/KwHgbVy.png)| ![](http://i.imgur.com/oEgYTNa.png)
 > The font used in the screenshot is SF Mono (not included)
-
-This is an Atom syntax theme based on the [Ramda REPL](http://ramdajs.com/repl/).
 
 ### Supported languages
 
