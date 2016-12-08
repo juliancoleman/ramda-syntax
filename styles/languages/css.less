@@ -1,0 +1,63 @@
+.syntax--source.syntax--css:not(.syntax--less):not(.syntax--scss):not(.syntax--styl) {
+  .syntax--terminator {
+    color: @white;
+  }
+
+  .syntax--at-rule {
+    color: @green;
+  }
+
+  .syntax--string.syntax--quoted,
+  .syntax--meta.syntax--at-rule.syntax--import {
+    color: @yellow;
+  }
+
+  .syntax--entity {
+    &.syntax--name {
+      &.syntax--tag {
+        &, &.syntax--custom {
+          color: @green;
+        }
+      }
+    }
+
+    &.syntax--other.syntax--attribute-name {
+      &.syntax--attribute {
+        color: @orange;
+      }
+
+      &.syntax--pseudo-class, &.syntax--pseudo-element {
+        color: @pink;
+      }
+
+      &.syntax--class {
+        color: @blue;
+      }
+    }
+  }
+
+  .syntax--support.syntax--type.syntax--property-name {
+    color: @blue;
+  }
+
+  .syntax--punctuation.syntax--separator.syntax--operator {
+    color: @pink;
+  }
+
+  .syntax--constant {
+    &.syntax--numeric {
+      color: @purple;
+    }
+    &.syntax--other.syntax--color.syntax--rgb-value {
+      color: @orange;
+    }
+
+    &.syntax--property-value {
+      color: @green;
+    }
+  }
+
+  .syntax--keyword.syntax--other.syntax--important {
+    color: @pink;
+  }
+}
