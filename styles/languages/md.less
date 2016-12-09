@@ -1,0 +1,35 @@
+.syntax--source.syntax--gfm {
+  .syntax--markup {
+    &.syntax--raw {
+      color: @yellow;
+    }
+
+    &.syntax--heading {
+      &.syntax--heading-1 {
+        color: @green;
+      }
+
+      &.syntax--heading-2 {
+        color: @orange;
+      }
+
+      &.syntax--heading-3 {
+        color: @pink;
+      }
+    }
+
+    &.syntax--underline {
+      text-decoration: underline;
+      color: @blue;
+
+      & > .syntax--punctuation.syntax--definition {
+        text-decoration: none !important;
+        color: @white;
+      }
+    }
+  }
+
+  .syntax--link > .syntax--entity {
+    color: @orange;
+  }
+}
