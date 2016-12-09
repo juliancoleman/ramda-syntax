@@ -1,0 +1,75 @@
+.syntax--source.syntax--go {
+  .syntax--string.syntax--quoted {
+    color: @yellow;
+  }
+
+  .syntax--keyword {
+    &.syntax--package,
+    &.syntax--type,
+    &.syntax--struct,
+    &.syntax--const,
+    &.syntax--var,
+    &.syntax--function,
+    &.syntax--control {
+      color: @pink;
+    }
+
+    &.syntax--operator {
+      &.syntax--assignment,
+      &.syntax--arithmetic,
+      &.syntax--comparison {
+        color: @pink;
+      }
+      &.syntax--address {
+        color: @green;
+      }
+    }
+
+    &.syntax--import {
+      color: @green;
+    }
+  }
+
+  .syntax--entity {
+    &.syntax--name {
+      &.syntax--package,
+      &.syntax--type,
+      &.syntax--function {
+        color: @green;
+      }
+    }
+  }
+
+  .syntax--storage {
+    &.syntax--type {
+      color: @blue;
+    }
+  }
+
+  .syntax--variable {
+    &.syntax--other {
+      &.syntax--declaration,
+      &.syntax--assignment {
+        color: @green;
+      }
+    }
+  }
+
+  .syntax--constant {
+    &.syntax--numeric {
+      &.syntax--integer {
+        color: @purple;
+      }
+    }
+
+    &.syntax--language {
+      color: @purple;
+    }
+  }
+
+  .syntax--support {
+    &.syntax--function {
+      color: @blue;
+    }
+  }
+}
