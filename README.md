@@ -1,5 +1,7 @@
 # ramda-syntax theme
 
+_this is a pre-release version for Atom 1.13_
+
 A syntax theme based on the [RamdaJS REPL](https://ramdajs.com/repl/)
 
 RamdaJS REPL                        | Atom Ramda Syntax Theme
