@@ -2,7 +2,7 @@
   "name": "ramda-syntax",
   "theme": "syntax",
   "version": "0.10.3",
-  "description": "A short description of your syntax theme",
+  "description": "A syntax theme based on the RamdaJS REPL",
   "keywords": [
     "syntax",
     "theme"
