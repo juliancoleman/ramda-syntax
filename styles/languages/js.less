@@ -23,7 +23,7 @@
   .syntax--storage.syntax--type.syntax--function,
   .syntax--keyword.syntax--control,
   .syntax--new,
-  .syntax--meta.syntax--arguments > .syntax--language:not(.syntax--boolean):not(.syntax--null) {
+  .syntax--meta.syntax--arguments > .syntax--language:not(.syntax--boolean):not(.syntax--null), .syntax--storage.syntax--type.syntax--class {
     color: @pink;
   }
 
@@ -36,7 +36,8 @@
   .syntax--meta.syntax--function > .syntax--name.syntax--function,
   .syntax--instance,
   .syntax--variable.syntax--other.syntax--object,
-  .syntax--arguments > .syntax--constant.syntax--other.syntax--object {
+  .syntax--arguments > .syntax--constant.syntax--other.syntax--object,
+  .syntax--entity.syntax--name.syntax--type.syntax--class {
     color: @green;
   }
 
