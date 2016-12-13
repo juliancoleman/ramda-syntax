@@ -1,9 +1,7 @@
-# ramda-syntax theme
+<p align="center"><img src="http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png" height="100" /></p>
+<p align="center">A syntax theme based on the [RamdaJS REPL](https://ramdajs.com/repl/)</p>
 
 _this is a pre-release version for Atom 1.13_
-
-<center><img src="http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png" height="50" /></center>
-<center>A syntax theme based on the [RamdaJS REPL](https://ramdajs.com/repl/)</center>
 
 RamdaJS REPL                        | Atom Ramda Syntax Theme
 :----------------------------------:|:-----------------------------------:
