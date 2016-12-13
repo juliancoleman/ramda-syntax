@@ -3,14 +3,22 @@
   "theme": "syntax",
   "version": "0.11.1",
   "description": "A syntax theme based on the RamdaJS REPL",
+  "license": "MIT",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "ramda",
+    "repl",
+    "sheep",
+    "eweda"
   ],
   "repository": "https://github.com/juliancoleman/ramda-syntax",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.13.0 <=2.0.0"
+    "atom": ">=1.13 <=2.0.0"
+  },
+  "dependencies": {
+    "ramda": "^0.22.1"
   },
   "devDependencies": {
     "eslint": "^3.3.1",
@@ -19,8 +27,5 @@
     "eslint-plugin-import": "^1.14.0",
     "eslint-plugin-jsx-a11y": "^2.1.0",
     "eslint-plugin-react": "^6.1.2"
-  },
-  "dependencies": {
-    "ramda": "^0.22.1"
   }
 }
