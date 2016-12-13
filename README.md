@@ -1,4 +1,4 @@
-<p align="center"><img src="http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png" height="100" /></p>
+<p align="center"><img src="http://ramda.jcphillipps.com/logo/ramdaFilled_200x235.png" height="150" /></p>
 <p align="center">A syntax theme based on the <a href="https://ramdajs.com/repl">RamdaJS REPL</a></p>
 
 _this is a pre-release version for Atom 1.13_
