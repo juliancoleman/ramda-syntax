@@ -35,10 +35,18 @@ ul[is = 'atom-tabs'] {
 }
 
 // Fix for #6 - @opalafox
-ul[is = 'atom-tabs'] * {
+ul[is = 'atom-tabs'] *:not('.tab.active') {
   background-color: @ramda !important;
   color: @ramda-bright !important;
   font-weight: 300;
+
+  & li[is = 'tabs-tab'].active {
+    background: @ramda-deep !important;
+
+    &  .title {
+      background: @ramda-deep !important;
+    }
+  }
 
   -webkit-mask: none;
 }
@@ -48,7 +56,7 @@ ul[is = 'atom-tabs'] * {
   padding: 0 !important;
 }
 
-ul[is='atom-tabs'].inset-panel > li[is='tabs-tab'].active,
+// ul[is='atom-tabs'].inset-panel > li[is='tabs-tab'].active,
 .active:only-child ul[is='atom-tabs'].inset-panel > li[is='tabs-tab']:hover {
-  background: @ramda !important;
+  background: @ramda-deep !important;
 }
