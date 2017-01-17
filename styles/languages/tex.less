@@ -1,0 +1,38 @@
+.syntax--text.syntax--tex.syntax--latex {
+  .syntax--keyword {
+    &.syntax--control {
+      &.syntax--preamble {
+        color: @pink;
+      }
+    }
+  }
+
+  .syntax--variable {
+    &.syntax--parameter {
+      color: @blue;
+
+      &.syntax--function {
+        color: @orange;
+      }
+    }
+  }
+
+  .syntax--support {
+    &.syntax--class {
+      color: @green;
+    }
+    &.syntax--support {
+      &.syntax--function {
+        color: @green;
+      }
+    }
+  }
+
+  .syntax--storage {
+    &.syntax--type {
+      &.syntax--function {
+        color: @pink;
+      }
+    }
+  }
+}
