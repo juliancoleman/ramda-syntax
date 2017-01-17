@@ -1,0 +1,21 @@
+.syntax--text.syntax--html.syntax--basic {
+  .syntax--string.syntax--quoted {
+    color: @yellow;
+  }
+
+  .syntax--entity {
+    &.syntax--name.syntax--tag {
+      color: @pink;
+    }
+
+    &.syntax--other {
+      &.syntax--attribute-name {
+        color: @green;
+      }
+
+      &.syntax--id {
+        color: @purple;
+      }
+    }
+  }
+}
