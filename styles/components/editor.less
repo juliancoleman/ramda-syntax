@@ -1,40 +1,19 @@
 @import '../syntax-variables';
 
-//
-// Invisibles
-//
-
 span.invisible-character,
 span.indent-guide {
   color: @comment-color;
   opacity: 0.25;
 }
 
-//
-// Comments
-//
-
-.syntax--comment {
-  color: @comment-color;
-  opacity: 1 !important;
-}
-
-//
-// Editor
-//
-.cursor {
-  color: @white;
-}
-
-.wrap-guide {
-  background-color: @comment-color !important;
-  opacity: 0.5;
-}
-
-div.item-views > .editor {
+.editor {
   background: @background-color;
 }
 
 .selection .region {
-  background: lighten(@background-color, 8%);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.cursor-line {
+  background-color: rgba(255, 255, 255, 0.025);
 }

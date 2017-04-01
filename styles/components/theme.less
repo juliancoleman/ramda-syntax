@@ -1,0 +1,34 @@
+@import '../colors';
+
+@comment: @comment-color;
+@string: @yellow;
+@number: @purple;
+@variable: @green;
+@variable-2: @white;
+@variable-3: @orange;
+@def: @green;
+@operator: @pink;
+@keyword: @pink;
+@atom: @purple;
+@meta: #f8f8f2;
+@tag: @pink;
+@attribute: @green;
+@qualifier: @green;
+@property: @blue;
+@builtin: @green;
+
+
+.syntax--source { color: @meta }
+.syntax--support { color: @builtin }
+.syntax--comment { color: @comment }
+.syntax--string, .syntax--quoted { color: @string }
+.syntax--keyword { color: @keyword }
+.syntax--variable { color: @green }
+.syntax--constant { color: @variable-3 }
+.syntax--numeric { color: @number }
+.syntax--operator { color: @operator }
+.syntax--tag { color: @tag }
+.syntax--attribute { color: @attribute }
+.syntax--builtin { color: @builtin }
+.syntax--property { color: @property }
+.syntax--meta { color: @meta }

@@ -5,26 +5,14 @@
   "description": "A syntax theme based on the RamdaJS REPL",
   "license": "MIT",
   "keywords": [
-    "syntax",
-    "theme",
+    "dracula",
+    "codemirror",
     "ramda",
     "repl",
-    "sheep",
-    "eweda"
+    "sheep"
   ],
   "repository": "https://github.com/juliancoleman/ramda-syntax",
   "engines": {
     "atom": ">=1.13 <=2.0.0"
-  },
-  "dependencies": {
-    "ramda": "^0.22.1"
-  },
-  "devDependencies": {
-    "eslint": "^3.3.1",
-    "eslint-config-airbnb": "^10.0.1",
-    "eslint-config-defaults": "^9.0.0",
-    "eslint-plugin-import": "^1.14.0",
-    "eslint-plugin-jsx-a11y": "^2.1.0",
-    "eslint-plugin-react": "^6.1.2"
   }
 }

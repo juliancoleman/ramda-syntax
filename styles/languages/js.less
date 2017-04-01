@@ -1,66 +1,22 @@
 .syntax--source.syntax--js {
-  color: @white;
-
-  .syntax--string.syntax--quoted,
-  .syntax--string.syntax--regexp {
-    color: @yellow;
-  }
-
-  .syntax--meta,
-  .syntax--terminator,
-  .syntax--punctuation.syntax--round,
-  .syntax--curly {
-    color: @white;
-  }
-
-  .syntax--support.syntax--class {
-    color: @green;
-  }
-
-  .syntax--storage.syntax--modifier,
-  .syntax--keyword.syntax--operator.syntax--assignment,
-  .syntax--storage.syntax--type.syntax--var,
-  .syntax--storage.syntax--type.syntax--function,
-  .syntax--keyword.syntax--control,
-  .syntax--new,
-  .syntax--meta.syntax--arguments > .syntax--language:not(.syntax--boolean):not(.syntax--null), .syntax--storage.syntax--type.syntax--class,
-  .syntax--keyword.syntax--operator.syntax--in,
-  .syntax--keyword.syntax--operator.syntax--of {
+  .syntax--storage {
     color: @pink;
   }
-
-  .syntax--constant.syntax--other,
-  .syntax--support.syntax--function,
-  .syntax--entity.syntax--name.syntax--function,
-  .syntax--meta.syntax--function-call > .syntax--name.syntax--function,
-  .syntax--support.syntax--variable.syntax--dom,
-  .syntax--entity.syntax--name.syntax--type.syntax--object.syntax--console,
-  .syntax--meta.syntax--function > .syntax--name.syntax--function,
-  .syntax--instance,
-  .syntax--variable.syntax--other.syntax--object,
-  .syntax--arguments > .syntax--constant.syntax--other.syntax--object,
-  .syntax--entity.syntax--name.syntax--type.syntax--class {
+  .syntax--other {
     color: @green;
   }
-
-  .syntax--constant.syntax--other:not(.syntax--object):not(:nth-child(2)),
-  .syntax--entity.syntax--name.syntax--function,
-  .syntax--variable.syntax--other.syntax--property,
-  .syntax--method-call > .syntax--support.syntax--function,
-  .syntax--support.syntax--variable,
-  .syntax--meta.syntax--arguments > .syntax--meta.syntax--function.syntax--method.syntax--definition > .syntax--entity.syntax--name.syntax--function,
-  .syntax--meta.syntax--arguments > .syntax--function.syntax--arrow > .syntax--entity.syntax--name.syntax--function {
+  .syntax--function {
+    color: @green;
+  }
+  .syntax--method-call {
+    .syntax--function {
+      color: @blue;
+    }
+  }
+  .syntax--object {
+    color: @green;
+  }
+  .syntax--property {
     color: @blue;
   }
-
-  .syntax--constant.syntax--numeric,
-  .syntax--constant.syntax--boolean,
-  .syntax--constant.syntax--null {
-    color: @purple;
-  }
-  .syntax--variable.syntax--parameter.syntax--function,
-  .syntax--meta.syntax--arguments > .syntax--constant.syntax--other:not(.syntax--object) {
-    color: @orange;
-  }
-
 }
