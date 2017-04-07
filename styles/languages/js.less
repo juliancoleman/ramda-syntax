@@ -9,7 +9,7 @@
     color: @builtin;
   }
   .syntax--method-call {
-    .syntax--function {
+    .syntax--function:not(.syntax--parameter):not(.syntax--support) {
       color: @blue;
     }
   }
@@ -28,5 +28,24 @@
   }
   .syntax--parameters {
     color: @variable-3;
+  }
+  .syntax--class.syntax--name {
+    color: @builtin;
+  }
+}
+
+// jsx
+
+.syntax--source.syntax--js {
+  .syntax--string.syntax--unquoted.syntax--js-label {
+    color: @property;
+  }
+  .syntax--string.syntax--quoted.syntax--jsx {
+    .syntax--string {
+      color: @string !important;
+    }
+    .syntax--meta.syntax--inner {
+      color: @string !important;
+    }
   }
 }
