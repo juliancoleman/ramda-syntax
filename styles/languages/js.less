@@ -32,20 +32,7 @@
   .syntax--class.syntax--name {
     color: @builtin;
   }
-}
-
-// jsx
-
-.syntax--source.syntax--js {
-  .syntax--string.syntax--unquoted.syntax--js-label {
-    color: @property;
-  }
-  .syntax--string.syntax--quoted.syntax--jsx {
-    .syntax--string {
-      color: @string !important;
-    }
-    .syntax--meta.syntax--inner {
-      color: @string !important;
-    }
+  .syntax--storage.syntax--type.syntax--function {
+    color: @keyword !important;
   }
 }
