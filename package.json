@@ -1,7 +1,7 @@
 {
   "name": "ramda-syntax",
   "theme": "syntax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A syntax theme based on the RamdaJS REPL",
   "license": "MIT",
   "keywords": [
