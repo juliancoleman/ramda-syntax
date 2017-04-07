@@ -1,12 +1,12 @@
 .syntax--source.syntax--js {
   .syntax--storage {
-    color: @pink;
+    color: @keyword;
+  }
+  .syntax--function.syntax--arrow {
+    color: @keyword !important;
   }
   .syntax--other {
-    color: @green;
-  }
-  .syntax--function {
-    color: @green;
+    color: @builtin;
   }
   .syntax--method-call {
     .syntax--function {
@@ -14,9 +14,15 @@
     }
   }
   .syntax--object {
-    color: @green;
+    color: @variable;
   }
   .syntax--property {
-    color: @blue;
+    color: @property;
+  }
+  .syntax--delimiter, .syntax--punctuation:not(.syntax--embedded) {
+    color: @meta !important;
+  }
+  .syntax--punctuation.syntax--embedded {
+    color: @string;
   }
 }

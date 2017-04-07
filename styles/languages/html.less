@@ -1,21 +1,8 @@
-.syntax--text.syntax--html.syntax--basic {
-  .syntax--string.syntax--quoted {
-    color: @yellow;
+.syntax--source.syntax--html {
+  .syntax--meta.syntax--toc-list.syntax--id {
+    color: @string !important;
   }
-
-  .syntax--entity {
-    &.syntax--name.syntax--tag {
-      color: @pink;
-    }
-
-    &.syntax--other {
-      &.syntax--attribute-name {
-        color: @green;
-      }
-
-      &.syntax--id {
-        color: @purple;
-      }
-    }
+  .syntax--doctype {
+    color: @meta !important;
   }
 }

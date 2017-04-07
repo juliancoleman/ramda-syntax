@@ -1,5 +1,10 @@
-.syntax--source.syntax--yaml, .syntax--source.syntax--json {
-  .syntax--string {
-    color: @yellow;
+.syntax--source.syntax--json {
+  .syntax--dictionary > .syntax--string, .syntax--dictionary > .syntax--string > .syntax--string {
+    color: @property;
+  }
+
+  .syntax--dictionary.syntax--separator + .syntax--string,
+  .syntax--dictionary.syntax--separator + .syntax--string > .syntax--string {
+    color: @string !important;
   }
 }

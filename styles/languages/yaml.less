@@ -1,0 +1,18 @@
+.syntax--source.syntax--yaml {
+  .syntax--tag {
+    color: @property;
+  }
+  .syntax--string.syntax--quoted, .syntax--string > .syntax--string {
+    color: @property;
+  }
+  .syntax--string.syntax--unquoted {
+    color: @meta;
+  }
+  .syntax--separator + .syntax--string:not(.syntax--unquoted),
+  .syntax--separator + .syntax--string > .syntax--string:not(.syntax--unquoted) {
+    color: @string;
+  }
+  .syntax--constant.syntax--language {
+    color: @atom;
+  }
+}
