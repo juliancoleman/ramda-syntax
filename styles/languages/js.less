@@ -13,7 +13,7 @@
     color: @builtin;
   }
   .syntax--method-call {
-    .syntax--function {
+    .syntax--function:not(.syntax--parameter):not(.syntax--support) {
       color: @blue;
     }
   }
@@ -34,5 +34,14 @@
   }
   .syntax--punctuation.syntax--embedded {
     color: @string;
+  }
+  .syntax--parameters {
+    color: @variable-3;
+  }
+  .syntax--class.syntax--name {
+    color: @builtin;
+  }
+  .syntax--storage.syntax--type.syntax--function {
+    color: @keyword !important;
   }
 }
