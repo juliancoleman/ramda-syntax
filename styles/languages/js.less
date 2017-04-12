@@ -1,6 +1,10 @@
 .syntax--source.syntax--js {
   .syntax--storage {
     color: @keyword;
+
+    &.syntax--function {
+      color: @keyword !important;
+    }
   }
   .syntax--function.syntax--arrow {
     color: @keyword !important;
@@ -13,6 +17,11 @@
       color: @blue;
     }
   }
+  .syntax--function-call {
+    .syntax--function {
+      color: @green;
+    }
+  }
   .syntax--object {
     color: @variable;
   }
@@ -20,7 +29,7 @@
     color: @property;
   }
   .syntax--delimiter,
-  .syntax--punctuation:not(.syntax--embedded) {
+  .syntax--punctuation:not(.syntax--embedded):not(.syntax--comment) {
     color: @meta !important;
   }
   .syntax--punctuation.syntax--embedded {
