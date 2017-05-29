@@ -19,7 +19,7 @@
   .syntax--property {
     color: @property;
   }
-  .syntax--delimiter, .syntax--punctuation:not(.syntax--embedded) {
+  .syntax--delimiter, .syntax--punctuation:not(.syntax--embedded):not(.syntax--comment) {
     color: @meta !important;
   }
   .syntax--punctuation.syntax--embedded {
